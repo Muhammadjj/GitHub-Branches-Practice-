@@ -17,6 +17,8 @@ class _ChattingListState extends State<ChattingList> {
           itemBuilder: (context, index) {
             return const ListTile(
               title: Text("Jawad Hassan"),
+              subtitle: Text("I am software Developers ."),
+              leading: Icon(Icons.add),
             );
           },
         ));
