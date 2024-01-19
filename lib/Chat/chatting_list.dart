@@ -11,7 +11,14 @@ class _ChattingListState extends State<ChattingList> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text("data")),
-    );
+        appBar: AppBar(title: const Text("data")),
+        body: ListView.builder(
+          itemCount: 20,
+          itemBuilder: (context, index) {
+            return const ListTile(
+              title: Text("Jawad Hassan"),
+            );
+          },
+        ));
   }
 }
